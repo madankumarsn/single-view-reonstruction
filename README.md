@@ -39,7 +39,7 @@ The goal is to compute `K` from a triad of orthogonal vanishing points, assuming
   
   | Input Image  | Annotated Parallel Lines | Vanishing points and principal point |
   | ----------- | ----------- | ----------- |
-  |  <img src="data/q2a_original.png" width="300">  | <img src="data/q2a.png" width="300"> | <img src="data/q2a_vanishing_points.png" width="300"> |
+  |  <img src="data/q2/q2a_original.png" width="300">  | <img src="data/q2/q2a.png" width="300"> | <img src="data/q2/q2a_vanishing_points.png" width="300"> |
     
   2. Report `K` for the input image.
   3. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
