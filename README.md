@@ -28,45 +28,28 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
 ### (a) Camera calibration from vanishing points (20 points)
 The goal is to compute `K` from a triad of orthogonal vanishing points, assuming that the camera has zero skew, and that the pixels are square. 
 
-**Dataset**
-  1. Run your code on `data/q2a.png`.
-  2. We provide a set of annotations of 3 pairs of parallel lines in `data/q2/q2a.npy`. Visualization can be found by running `python annotations.py`.
-  3. (optional) Annotate 3 additional pairs of parallel lines that are orthogonal to each other, to see how annotation quality affects your estimate of K.
-
-**Submission**
-  1. Output plots of the vanishing points and the principal point. Also include visualizations of the annotations:
+  1. Output plots of the vanishing points and the principal point.
   
   | Input Image  | Annotated Parallel Lines | Vanishing points and principal point |
   | ----------- | ----------- | ----------- |
   |  <img src="data/q2/q2a_original.png" width="300">  | <img src="data/q2/q2a.png" width="300"> | <img src="data/q2/q2a_vanishing_points.png" width="300"> |
     
-  2. Report `K` for the input image.
-  3. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
+  2. <img src="data/Q2aK.png" width="600">
+  3. Brief description of your implementation 
   
 ### (b) Camera calibration from metric planes  (20 points)
 In this question, your goal is to compute `K` from image of three squares. Different from (a), you will not make any additional assumption on `K` (except that it is a projective camera). 
 
-**Dataset**
-  1. Run your code on `data/q2b.png`.
-  2. We provide a set of 3 annotations of squares in `data/q2/q2b.npy`. Visualization can be found by running `python annotations.py`.
-  3. (optional) Annotate 3 squares, to see how annotation quality affects your estimate of K.
-
-**Submission**
-  1. Visualizations of annotations that you used. See the following figure as an example:
+  1. Visualizations of annotations. 
   
   | Input Image  | Annotated Square 1 | Annotated Square 2 | Annotated Square 3 | 
   | ----------- | ----------- | ----------- |  ----------- |
   |  <img src="data/q2/q2b_origin_image.png" width="200">  | <img src="data/q2/q2b_poly_0.png" width="200"> |  <img src="data/q2/q2b_poly_1.png" width="200"> |  <img src="data/q2/q2b_poly_2.png" width="200"> |
     
-  2. Evaluate angles between each pair of planes. This will reflect the correctness of your calibration result.
+  2 & 3. Evaluate angles between each pair of planes and report K
   
-  |       | Angle between planes(degree) |
-  | ----------- | ----------- |
-  | Plane 1 & Plane 2    | 67.40    |
-  | Plane 1 & Plane 3    | 92.22    |
-  | Plane 2 & Plane 3    | 94.70    |
+ <img src="data/Q2abPd.png" width="600">
     
-  3. Report `K` for the input image.
   4. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
 
 
