@@ -48,7 +48,7 @@ In this question, your goal is to compute `K` from image of three squares. Diffe
     
   2 & 3. Evaluate angles between each pair of planes and report K
   
- <img src="data/Q2abPd.png" width="600">
+ <img src="data/Q2bPd.png" width="600">
     
   4. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
 
