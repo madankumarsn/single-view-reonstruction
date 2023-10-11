@@ -23,7 +23,7 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
 
   | Input Image  | Annotated 2D points | Example Result |
   | ----------- | ----------- | ----------- | 
-  |  <img src="figures/q1/cube.jpg" width="300">  | <img src="figures/q1/cube_anno.jpg" width="300"> |  <img src="figures/q1/cube_result.jpg" width="300">
+  |  <img src="data/q1/cube.jpg" width="300">  | <img src="figures/q1/cube_anno.jpg" width="300"> |  <img src="figures/q1/cube_result.jpg" width="300">
 
 ## Q2: Camera calibration `K` from annotations (40 points + 10 points bonus)
 ### (a) Camera calibration from vanishing points (20 points)
