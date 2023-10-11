@@ -57,7 +57,7 @@ In this question, your goal is to compute `K` from image of three squares. Diffe
   
   | Input Image  | Annotated Square 1 | Annotated Square 2 | Annotated Square 3 | 
   | ----------- | ----------- | ----------- |  ----------- |
-  |  <img src="data/q2b.png" width="200">  | <img src="figures/q2b_square0.png" width="200"> |  <img src="figures/q2b_square1.png" width="200"> |  <img src="figures/q2b_square2.png" width="200"> |
+  |  <img src="data/q2/q2b_origin_image.png" width="200">  | <img src="data/q2/q2b_poly_0.png" width="200"> |  <img src="data/q2/q2b_poly_1.png" width="200"> |  <img src="data/q2/q2b_poly_2.png" width="200"> |
     
   2. Evaluate angles between each pair of planes. This will reflect the correctness of your calibration result.
   
@@ -69,30 +69,6 @@ In this question, your goal is to compute `K` from image of three squares. Diffe
     
   3. Report `K` for the input image.
   4. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
-
-### (c) Camera calibration from rectangles with known sizes  (10 points bonus)
-In part (b), you computed `K` from image of three squares (based on the algorithm described in the lectures). In this question, the goal is to modify this approach by relaxing the assumption of imaging squares, and instead computing `K` from image of three rectangles, each with known height-to-width ratios.
-
-**Dataset Preparation**
-  1. Find (or capture) `1` image of three rectangles, where the height:width ratios are known. Make sure that the three rectangles are not on the same plane.
-
-**Submission**
-  1. Input image.
-  2. Visualizations of annotations that you used.
-  3. Evaluate angles between each pair of planes. This will reflect the correctness of your calibration result.
-  4. Report `K` for your input image.
-  5. Brief description of your implementation (i.e., the algorithm followed with relevant equations, and in particular emphasizing the differences compared to part b).
-
-  | Example Input Image  | Annotated Squares | 
-  | ----------- | ----------- | 
-  |  <img src="figures/q2c2.png" width="200">  | <img src="figures/anno.jpg" width="200"> |  
-    
-  
-  |       | Angle between planes(degree) |
-  | ----------- | ----------- |
-  | Plane 1 & Plane 2    | 62.99    |
-  | Plane 1 & Plane 3    | 84.11   |
-  | Plane 2 & Plane 3    | 86.88    |
 
 
 ## Q3: Single View Reconstruction (30 points + 10 points bonus)
@@ -108,15 +84,9 @@ In this question, your goal is to reconstruct a colored point cloud from a singl
   
   | Input Image  | Annotations | Reconstruction View 1 | Reconstruction View 2 | 
   | ----------- | ----------- | ----------- |  ----------- |
-  |  <img src="data/q3.png" width="200">  | <img src="figures/q3_annotations.png" width="200"> |  <img src="figures/q3_view.png" width="200"> |  <img src="figures/q3_view2.png" width="200"> |
+  |  <img src="data/q3/q3_origin_image.png" width="200">  | <img src="data/q3/q3_labeled_image.png" width="200"> |  <img src="data/q3/3_view1.png" width="200"> |  <img src="data/q3/3_view2.png" width="200"> |
   
   2. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
-
-**Hints**
-
-1. For visualization, consider using [3D scatter plot](https://matplotlib.org/stable/gallery/mplot3d/scatter3d.html) from `matplotlib`.
-
-2. Consider following these steps for your implementation:
     1. Use Q2a to compute `K`.
     2. Annotate plane boundaries with corner points.
     3. Compute plane normals.
@@ -124,25 +94,3 @@ In this question, your goal is to reconstruct a colored point cloud from a singl
     5. Compute plane equation given the known 3D point.
     6. Compute 3D coordinate of all points on the plane via ray-plane intersection.
     7. Repeat the above two steps to obtain equations for all planes (and all 3D points).
-
-  
-### (b) (10 points bonus)
-For this part, you will run your implementation in part (a) on `3` more images. For each image, submit a gif of the reconstructed 3d structure from different views.
-
-**Submissions**
-  1. Input images.
-  2. For each input image, include a gif to visualize the reconstruction at different views.
-
-| Example Input Image  | Output | 
-  | ----------- | ----------- | 
-  |  <img src="figures/q3b.png" width="200">  | <img src="figures/q3b_vid.gif" width="200"> |  
-    
-
-
-## What you can *not* do
-* Download any code.
-* Use any predefined routines except linear algebra functions, image interpolation, and image warping.
-  
-## Tips
-* It is a good idea to `assert` with sanity checks regularly during debugging.
-* **Start Early and Have Fun!**
