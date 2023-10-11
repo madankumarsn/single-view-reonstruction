@@ -57,12 +57,7 @@ In this question, your goal is to compute `K` from image of three squares. Diffe
 In this question, your goal is to reconstruct a colored point cloud from a single image.
 
 ### (a) (30 points)
-**Dataset**
-  1. Run your code on `data/q3.png`. You may assume zero skew and square pixels for `data/q3.png`.
-  2. We provide a set of annotations of plane boundaries in `data/q3/q3.npy`. Visualization can be found by running `python annotations.py`.
-  
-**Submissions**
-  1. Output reconstruction from at least two different views. Also include visualizations of annotations that you used. See the following figure as an example:
+  1. Output reconstruction from at least two different views. Also include visualizations of annotations:
   
   | Input Image  | Annotations | Reconstruction View 1 | Reconstruction View 2 | 
   | ----------- | ----------- | ----------- |  ----------- |
