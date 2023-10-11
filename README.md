@@ -8,7 +8,8 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
 
 **Instructions**
   1. Compute camera matrix `P` using the provided 2D-3D correspondences.
-     <img src="data/Q2bP.png" width="300">
+
+<img src="data/Q2bP.png" width="600">
  
 
   | Surface Points  | Bounding Box |
