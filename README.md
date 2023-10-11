@@ -27,7 +27,7 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
 
 ## Q2: Camera calibration `K` from annotations (40 points + 10 points bonus)
 ### (a) Camera calibration from vanishing points (20 points)
-In this question, your goal is to compute `K` from a triad of orthogonal vanishing points, assuming that the camera has zero skew, and that the pixels are square. 
+The goal is to compute `K` from a triad of orthogonal vanishing points, assuming that the camera has zero skew, and that the pixels are square. 
 
 **Dataset**
   1. Run your code on `data/q2a.png`.
@@ -35,11 +35,11 @@ In this question, your goal is to compute `K` from a triad of orthogonal vanishi
   3. (optional) Annotate 3 additional pairs of parallel lines that are orthogonal to each other, to see how annotation quality affects your estimate of K.
 
 **Submission**
-  1. Output plots of the vanishing points and the principal point. Also include visualizations of the annotations that you used. See the following figures:
+  1. Output plots of the vanishing points and the principal point. Also include visualizations of the annotations:
   
   | Input Image  | Annotated Parallel Lines | Vanishing points and principal point |
   | ----------- | ----------- | ----------- |
-  |  <img src="data/q2a.png" width="300">  | <img src="figures/q2a_parallel_annotated.png" width="300"> | <img src="figures/q2a.png" width="300"> |
+  |  <img src="data/q2a_original.png" width="300">  | <img src="data/q2a.png" width="300"> | <img src="data/q2a_vanishing_points.png" width="300"> |
     
   2. Report `K` for the input image.
   3. Brief description of your implementation (i.e., the algorithm followed with relevant equations).
