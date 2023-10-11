@@ -1,7 +1,6 @@
 # HW2: Single-view Reconstruction
 
 ## Q1:  Camera matrix `P` from 2D-3D correspondences (30 points)
-In this question, your goal is to compute `P` from 2D-3D point correspondences.
 
 ### (a) Stanford Bunny (15 points)
 Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains multiple rows. Each row represents a pair of 2D-3D correspondences, where the first 2 numbers are the 2D coordinates on the image while the next 3 numbers are the corresponding 3D coordinates.
