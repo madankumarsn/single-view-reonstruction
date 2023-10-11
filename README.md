@@ -6,8 +6,7 @@ In this question, your goal is to compute `P` from 2D-3D point correspondences.
 ### (a) Stanford Bunny (15 points)
 Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains multiple rows. Each row represents a pair of 2D-3D correspondences, where the first 2 numbers are the 2D coordinates on the image while the next 3 numbers are the corresponding 3D coordinates.
 
-**Instructions**
-  1. Compute camera matrix `P` using the provided 2D-3D correspondences.
+ 1. Compute camera matrix `P` using the provided 2D-3D correspondences.
 
 <img src="data/Q2aP.png" width="600">
  
@@ -17,8 +16,7 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
   |  <img src="data/q1/surface_image.png" width="300">  | <img src="data/q1/bbox_image.png" width="300"> | 
 
 ### (b) Cuboid (15 points)
-**Instructions**
-  1. Compute the camera matrix `P` using your annotated 2D-3D correspondences.
+ 1. Compute the camera matrix `P` using your annotated 2D-3D correspondences.
 <img src="data/Q2bP.png" width="600">
   
 
