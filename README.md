@@ -9,7 +9,7 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
 **Instructions**
   1. Compute camera matrix `P` using the provided 2D-3D correspondences.
 
-<img src="data/Q2bP.png" width="600">
+<img src="data/Q2aP.png" width="600">
  
 
   | Surface Points  | Bounding Box |
@@ -18,9 +18,9 @@ Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains
 
 ### (b) Cuboid (15 points)
 **Instructions**
-  1. Find (or capture) 1 image of a cuboid. Come up with a 3D coordinate system (by measuring relative dimensions of the cuboid) and annotate 6 pairs of point correspondences.
-  2. Compute the camera matrix `P` using your annotated 2D-3D correspondences.
-  3. Draw the edges of the cuboid using your calculated `P` or do something fun!
+  1. Compute the camera matrix `P` using your annotated 2D-3D correspondences.
+<img src="data/Q2bP.png" width="600">
+  
 
   | Input Image  | Annotated 2D points | Example Result |
   | ----------- | ----------- | ----------- | 
