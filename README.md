@@ -1,33 +1,19 @@
 # HW2: Single-view Reconstruction
 
-## Instructions
-* Late Submission Policy: See the late submission policy [here](https://geometric3d.github.io/pages/assignments/hw0.html).
-* Submitting your work: Check the instructions for submission [here](https://geometric3d.github.io/pages/assignments/hw0.html).
-* There are `3` questions in this assignment. Make sure you follow the instructions and submit the answers as required.
-
-
-## Updates:
-* 2023/10/08: Update the wording of Q2a and Q2b to make it clear that using your own annotations is not required.
-
-
 ## Q1:  Camera matrix `P` from 2D-3D correspondences (30 points)
 In this question, your goal is to compute `P` from 2D-3D point correspondences.
 
 ### (a) Stanford Bunny (15 points)
-We provide a picture of stanford bunny `data/q1/bunny.jpeg` and 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains multiple rows. Each row represents a pair of 2D-3D correspondences, where the first 2 numbers are the 2D coordinates on the image while the next 3 numbers are the corresponding 3D coordinates.
-
-  | Input Image  | Annotated 2D points |
-  | ----------- | ----------- | 
-  |  <img src="data/q1/bunny.jpeg" width="300">  | <img src="figures/q1/anno.jpg" width="300"> | 
+Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains multiple rows. Each row represents a pair of 2D-3D correspondences, where the first 2 numbers are the 2D coordinates on the image while the next 3 numbers are the corresponding 3D coordinates.
 
 **Instructions**
   1. Compute the camera matrix `P` using the provided 2D-3D correspondences.
-  2. We provide a set of 3D surface points in `data/q1/bunny_pts.npy`. Project these points to the image using your calculated `P`. See the example below.
-  3. We provide the 12 edges of the bounding box in `data/q1/bunny_bd.npy`. Each line contains 6 numbers, where every 3 numbers denote 1 point. Project these points to the image and draw the cuboid. See the example below.
+  2. We provide a set of 3D surface points in `data/q1/bunny_pts.npy`. Project these points to the image using your calculated `P`.
+  3. We provide the 12 edges of the bounding box in `data/q1/bunny_bd.npy`. Each line contains 6 numbers, where every 3 numbers denote 1 point. Project these points to the image and draw the cuboid. 
 
   | Surface Points  | Bounding Box |
   | ----------- | ----------- | 
-  |  <img src="figures/q1/result.jpg" width="300">  | <img src="figures/q1/boundary.jpg" width="300"> | 
+  |  <img src="data/q1/surface_image.png" width="300">  | <img src="data/q1/bbox_image.png" width="300"> | 
 
 ### (b) Cuboid (15 points)
 **Instructions**
