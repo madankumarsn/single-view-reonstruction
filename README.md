@@ -7,7 +7,7 @@ In this question, your goal is to compute `P` from 2D-3D point correspondences.
 Given 2D-3D point correspondences in `data/q1/bunny.txt`. The text file contains multiple rows. Each row represents a pair of 2D-3D correspondences, where the first 2 numbers are the 2D coordinates on the image while the next 3 numbers are the corresponding 3D coordinates.
 
 **Instructions**
-  1. Compute the camera matrix `P` using the provided 2D-3D correspondences.
+  1. Compute camera matrix `P` using the provided 2D-3D correspondences. <img src="data/q1/Q2bP.png" width="300">
   2. We provide a set of 3D surface points in `data/q1/bunny_pts.npy`. Project these points to the image using your calculated `P`.
   3. We provide the 12 edges of the bounding box in `data/q1/bunny_bd.npy`. Each line contains 6 numbers, where every 3 numbers denote 1 point. Project these points to the image and draw the cuboid. 
 
